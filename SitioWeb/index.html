@@ -115,3 +115,25 @@
   </div>
 </body>
 </html>
+<body>
+  <!-- Barra de navegación -->
+  <nav style="background:rgba(0,0,0,0.8); padding:10px; text-align:center;">
+    <a href="#" style="margin:0 15px; color:#66ccff; font-weight:bold;">Principal</a>
+    <a href="#" style="margin:0 15px; color:#66ccff; font-weight:bold;">Noticias</a>
+    <span style="margin:0 15px; color:#66ccff; font-weight:bold; cursor:pointer;" onclick="toggleDescargas()">Descargas ▼</span>
+  </nav>
+
+  <!-- Lista de descargas oculta -->
+  <div id="descargas" style="display:none; background:rgba(0,0,0,0.6); padding:10px; text-align:center;">
+    <p>Prototype</p>
+    <p>Pre Alpha</p>
+    <p>Alpha</p>
+    <p>Alpha 2</p>
+  </div>
+
+  <script>
+    function toggleDescargas() {
+      var lista = document.getElementById("descargas");
+      lista.style.display = (lista.style.display === "none") ? "block" : "none";
+    }
+  </script>
