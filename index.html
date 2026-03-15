@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Slendytubbies WCA</title>
+  <style>
+    @font-face {
+      font-family: 'LD Slender';
+      src: url('LDSlender.ttf') format('truetype');
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+      background-image: url('image_1770748954906.jpeg'); /* fondo dinamico */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'LD Slender', Arial, sans-serif;
+      text-align: center;
+      color: #ffffff; /* texto base blanco */
+    }
+    h1, h2 {
+      color: #00aaff; /* titulos en azul */
+    }
+    .chapter {
+      cursor: pointer;
+      color: #ff4444; /* capitulos en rojo */
+      margin-top: 10px;
+    }
+    .sinopsis {
+      display: none;
+      margin-top: 10px;
+      color: #ffffff;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .nota {
+      color: #00ff55; /* notas finales en verde */
+    }
+    .discord, .youtube {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+    .discord img, .youtube img {
+      width: 60px;
+      height: 60px;
+    }
+    a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function toggleSinopsis(id) {
+      var sinopsis = document.getElementById(id);
+      sinopsis.style.display = (sinopsis.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <!-- Logo arriba -->
+  <div class="logo">
+    <img src="WCA.png" alt="Slendytubbies WCA" style="max-width:500px;">
+  </div>
+
+  <h1>que es slendytubbies whats come air?</h1>
+  <p><span style="color:#00aaff;">slendytubbies</span> Whats Come Air es un fangame que en la historia es una secuela inderecta de ST3 enfocada en nuevos personajes y ubicada 5 anios despues de la campania y el DLC.</p>
+
+  <h2>sinopsis</h2>
+  <p>5 anios despues de la Tubbie Masacre, muchas cosas han cambiado, los militares han quedado un poco mas en aprieto y esta historia sigue a un grupo de ellos llamado U.P.T haciendo misiones, dependiendo de tus decisiones el grupo puede terminar bien o mal, a diferencia de ST3 hay diferentes rutas y tus decisiones...si importan</p>
+
+  <h2>como es el online?</h2>
+  <p>el online sera real, y tendra un sistema de customziacion muy avanzado, podras ponerte tono de piel, pelo, ropa, armas en la espalda, ademas de que no hay un sistema de skins, hay un sistema de OCs, puedes editar sus conexiones, y en cuanto mas juegas y mejoras jugando se ve reflejado en el medidor de estadisticas</p>
+
+  <h2>como es el desarrollo del juego?</h2>
+  <p>bueno, el juego tendra un sistema de desarrollo similar a juegos como hello neighbor, la primera version descargable es el Prototype, luego la pre alpha como una Actualizacion mas grande y asi con alphas 1,2,3,4,5 y cuantas sean necesarias hasta llegar a la demo y luego la beta con su 1.0,1.1,1.12 Etc</p>
+
+  <h2>como son los capitulos?</h2>
+  <p>la trama de los primeros 7 capitulos ya esta planeada...si, 7, no se como comprimir la historia tan grande y ya esta planificado en historia para que cuadre</p>
+
+  <div class="chapter" onclick="toggleSinopsis('sinopsis1')">Chapter 1: Presentation in the mein</div>
+  <div id="sinopsis1" class="sinopsis">
+    sinopsis: la presentacion de los protagonistas, te muestra un poco sus actitudes, no es tan importante
+  </div>
+
+  <div class="chapter" onclick="toggleSinopsis('sinopsis2')">Chapter 2: Wrold Introduction</div>
+  <div id="sinopsis2" class="sinopsis">
+    sinopsis: nos ensena el mundo, aqui empiezan las decisiones, hace enfasis en sentimientos y demostrar 
+    empatia en los teletubbies, porque se nos entroduce a algo totalmente opuesto a emociones como enemigo principal..
+    va a haber muchas misiones, nos ensenaran otros escuadrones militares y veremos a personajes principales, como WHITE volver...
+  </div>
+
+  <p class="nota">el resto de capitulos pueden revelar algo con su nombre ;)</p>
+
+  <h2>tenemos un server dediscord :D</h2>
+  <div class="discord">
+    <a href="https://discord.gg/U2UWBmKDdk" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+    <p>pasate por aca para ver los anuncios del fan game ;)</p>
+  </div>
+
+  <h2>canal de yt sobre el proyecto y otros juegos ;)</h2>
+  <div class="youtube">
+    <a href="https://youtube.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+    </a>
+  </div>
+</body>
+</html>
+<body>
+  <!-- Barra de navegación -->
+  <nav style="background:rgba(0,0,0,0.8); padding:10px; text-align:center;">
+    <a href="#" style="margin:0 15px; color:#66ccff; font-weight:bold;">Principal</a>
+    <a href="#" style="margin:0 15px; color:#66ccff; font-weight:bold;">Noticias</a>
+    <span style="margin:0 15px; color:#66ccff; font-weight:bold; cursor:pointer;" onclick="toggleDescargas()">Descargas ▼</span>
+  </nav>
+
+  <!-- Lista de descargas oculta -->
+  <div id="descargas" style="display:none; background:rgba(0,0,0,0.6); padding:10px; text-align:center;">
+    <p>Prototype</p>
+    <p>Pre Alpha</p>
+    <p>Alpha</p>
+    <p>Alpha 2</p>
+  </div>
+
+  <script>
+    function toggleDescargas() {
+      var lista = document.getElementById("descargas");
+      lista.style.display = (lista.style.display === "none") ? "block" : "none";
+    }
+  </script>
